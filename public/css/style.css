@@ -1,0 +1,28 @@
+*{
+    font-family: 'algerian';
+}
+.card{
+    border: 1px solid black;
+    max-width: fit-content;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: auto;
+    align-self: center;
+    box-shadow: 0.5rem 0.5rem;
+    background: rgb(106, 114, 106);
+}
+
+body{
+    background: goldenrod;
+}
+
+table, th, td{
+    border:1px solid black;
+    border-spacing: 0;
+}
+h2{
+    text-align: center;
+}
+th, td{
+    padding: 1rem;
+}
