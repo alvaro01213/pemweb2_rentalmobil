@@ -35,3 +35,15 @@ Route::post('/mobil/simpanData',[MobilController::class,'store']);
 Route::get('/merk', [Merkcontroller::class, 'index']);
 Route::get('/merk/create', [Merkcontroller::class, 'create']);
 Route::post('/merk/simpanData', [Merkcontroller::class, 'store']);
+
+Route::get('/merk/edit/{id}', [Merkcontroller::class, 'edit']);
+Route::post('/merk/update/{id}', [Merkcontroller::class, 'update']);
+Route::get('/merk/delete/{id}', [Merkcontroller::class, 'delete']);
+
+// Route Folder Tipe Mobil
+Route::get('/tipe_mobil', [TipeMobilController::class, 'index']);
+Route::get('/tipe_mobil/create', [TipeMobilController::class, 'create']);
+Route::post('/tipe_mobil/simpan-data', [TipeMobilController::class, 'store']);
+Route::get('/tipe_mobil/edit/{id}', [TipeMobilController::class, 'edit']); //edit data
+Route::post('/tipe_mobil/update/{id}', [TipeMobilController::class, 'update']);
+Route::get('/tipe_mobil/delete/{id}', [TipeMobilController::class, 'delete']);
