@@ -47,3 +47,10 @@ Route::post('/tipe_mobil/simpan-data', [TipeMobilController::class, 'store']);
 Route::get('/tipe_mobil/edit/{id}', [TipeMobilController::class, 'edit']); //edit data
 Route::post('/tipe_mobil/update/{id}', [TipeMobilController::class, 'update']);
 Route::get('/tipe_mobil/delete/{id}', [TipeMobilController::class, 'delete']);
+
+Route::get('/mobil',[MobilController::class,'index']);
+Route::get('/mobil/create',[MobilController::class,'create']); //memanggil form
+Route::post('/mobil/simpan-data',[MobilController::class,'store']); //mengirim request
+Route::get('/mobil/delete/{id}',[MobilController::class,'delete']);
+Route::post('/mobil/update/{id}',[MobilController::class,'update']);
+Route::get('/mobil/edit/{id}',[MobilController::class,'edit']);
